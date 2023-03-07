@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Die - Authentification</title>
+    <script src="lib/MultiNode.js"></script>
+    <script defer src="JeuxDes.js"></script>
+</head>
+<body>
+
+    <form id="formulaire-authentification">
+        <fieldset>
+            <lable>Pseudonyme</lable>
+            <input type="text" id="champ-pseudonyme"/>
+            <input type="submit" value="Authentification" id="bouton-authentification"/>
+        </fieldset>
+    </form>
+
+    <form id="formulaire-determiner-premier-joueur">
+        <fieldset>
+            <legend>Valeur du de</legend>
+            <input type="text" id="valeur-tirage" value=""/>
+        </fieldset>
+        <input type="submit" value="Lancer" id="bouton-tirage"/>
+    </form>
+
+    <form id="formulaire-jeu">
+		<fieldset>
+			<legend>Numero tour</legend>
+			<input type="text" id="champ-compteur-tour" value=""/>
+		</fieldset>
+        <fieldset>
+            <legend>Score</legend>
+            <input type="text" id="champ-score" value=""/>
+        </fieldset>
+        <input type="submit" value="Lancer" id="bouton-lancer"/>
+        <input type="text" id="champ-valeur-des"/>
+
+        <fieldset >
+            <legend id="information-autre-joueur">Score {nom-autre-joueur}</legend>
+            <input type="text" id="champ-score-autre-joueur" value=""/>
+        </fieldset>
+		
+    </form>
+
+</body>
+</html>
